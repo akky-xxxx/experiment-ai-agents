@@ -1,0 +1,19 @@
+# general
+.DS_Store
+.cache
+Thumbs.db
+
+# ide 関連
+.idea
+.vscode
+
+# develop 関連
+.pnpm-store
+.pnpm-debug.log*
+*.tsbuildinfo
+coverage
+node_modules
+pnpm-error.log*
+
+# build 関連
+**/dist
