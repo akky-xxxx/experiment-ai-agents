@@ -1,0 +1,37 @@
+import type { CSpellUserSettings } from "@cspell/cspell-types"
+
+export default {
+  ignorePaths: [
+    "*.ico",
+    "*.svg",
+    ".next",
+    "build",
+    "coverage",
+    "node_modules",
+    "out",
+    "pnpm-lock.yaml",
+    "storybook-static",
+  ],
+  language: "en",
+  useGitignore: true,
+  version: "0.2",
+  words: [
+    "Geist",
+    "Storybook",
+    "akimoto",
+    "corepack",
+    "cspell",
+    "eslintrc",
+    "jsdom",
+    "noEmit",
+    "pnpm",
+    "shogoakimoto",
+    "storybook",
+    "stylelint",
+    "swc",
+    "tsbuildinfo",
+    "unicorn",
+    "unrs",
+    "webpack",
+  ],
+} satisfies CSpellUserSettings
