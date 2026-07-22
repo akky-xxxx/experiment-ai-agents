@@ -8,12 +8,29 @@ Thumbs.db
 .vscode
 
 # develop 関連
-.pnpm-store
-.pnpm-debug.log*
 *.tsbuildinfo
+.pnpm-debug.log*
+.pnpm-store
 coverage
 node_modules
 pnpm-error.log*
 
 # build 関連
 **/dist
+
+# next.js
+.next
+next-env.d.ts
+out
+
+# storybook
+storybook-static
+
+# env files (opt-in で個別に commit する場合はここを調整)
+.env*
+!.env.example
+
+# vercel
+.vercel
+
+*storybook.log
