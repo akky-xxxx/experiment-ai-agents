@@ -8,6 +8,8 @@ Thumbs.db
 .vscode
 
 # develop 関連
+*.module.css.d.ts
+*.module.css.d.ts.map
 *.tsbuildinfo
 .pnpm-debug.log*
 .pnpm-store

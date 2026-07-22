@@ -16,6 +16,7 @@ export default [
       "coverage/**",
       "next-env.d.ts",
       "out/**",
+      "src/**/*.module.css.d.ts",
       "storybook-static/**",
       // Type-aware parsing chokes on these root-level tool configs; Prettier
       // and cspell still cover them.

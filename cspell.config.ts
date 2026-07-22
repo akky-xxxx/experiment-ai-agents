@@ -22,6 +22,7 @@ export default {
     "corepack",
     "cspell",
     "eslintrc",
+    "hcm",
     "jsdom",
     "noEmit",
     "pnpm",
