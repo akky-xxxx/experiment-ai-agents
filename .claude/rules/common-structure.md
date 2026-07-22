@@ -37,8 +37,8 @@
   ├ {機能名}.test.ts(x)
   ├ {機能名}.stories.tsx
   ├ {機能名}.stories.test.tsx
-  ├ useHook.ts(x)
-  ├ useHook.test.ts(x)
+  ├ use{機能名}.ts(x)   # その component にのみ依存する副作用・状態を全て押し込める役割
+  ├ use{機能名}.test.ts(x)
   ├ modules
   | └ {機能名}
   ├ constants
