@@ -3,12 +3,12 @@ import { act, renderHook } from "@testing-library/react"
 import { useCounter } from "./useCounter"
 
 describe("useCounter", () => {
-  it("initializes with the given value", () => {
+  it("指定した初期値で初期化される", () => {
     const { result } = renderHook(() => useCounter(5))
     expect(result.current.count).toBe(5)
   })
 
-  it("increments and decrements the count", () => {
+  it("count を増減できる", () => {
     const { result } = renderHook(() => useCounter())
 
     act(() => {
@@ -22,7 +22,7 @@ describe("useCounter", () => {
     expect(result.current.count).toBe(0)
   })
 
-  it("resets to the initial value", () => {
+  it("初期値にリセットできる", () => {
     const { result } = renderHook(() => useCounter(3))
 
     act(() => {

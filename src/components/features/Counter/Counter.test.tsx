@@ -7,17 +7,17 @@ import * as stories from "./Counter.stories"
 const { Default, StartsAtFive } = composeStories(stories)
 
 describe("Counter stories", () => {
-  it("renders with the default initial value", async () => {
+  it("デフォルトの初期値で表示される", async () => {
     await Default.run()
     expect(screen.getByText("0")).toBeInTheDocument()
   })
 
-  it("renders with a custom initial value", async () => {
+  it("指定した初期値で表示される", async () => {
     await StartsAtFive.run()
     expect(screen.getByText("5")).toBeInTheDocument()
   })
 
-  it("increments the count on click", async () => {
+  it("クリックでcountが増加する", async () => {
     const user = userEvent.setup()
     await Default.run()
 
