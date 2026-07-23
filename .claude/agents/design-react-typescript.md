@@ -19,9 +19,13 @@ tools: Read, Grep, Glob, Bash
 - `.claude/rules/common-structure.md`（ディレクトリ構成、ネームケース、1ファイル1エクスポート）
 - `.claude/rules/react/structures.md`（component category, props の型命名）
 
+## 呼び出し側への注意（オーケストレーター向け）
+
+`investigate-existing-code` の実行後に、その出力を入力として渡した上で使用すること。
+
 ## 進め方
 
-1. 既存コードを Read/Grep/Glob で調査し、類似パターンや既存の命名・構成慣習を確認する
+1. 渡された `investigate-existing-code` の調査レポートを起点とし、react/typescript の観点で追加の深掘りが必要な場合のみ Read/Grep/Glob で補足調査する
 2. 要求されたコンポーネント/機能について、上記の観点で設計案をまとめる
 3. 複数案がある場合はトレードオフを明示した上で推奨案を1つ示す
 

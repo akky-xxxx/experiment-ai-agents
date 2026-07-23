@@ -19,9 +19,13 @@ tools: Read, Grep, Glob, Bash
 - `.claude/rules/common-structure.md`（co-location 構成、ネームケース）
 - `.claude/rules/test.md`（describe/it のメッセージは日本語）
 
+## 呼び出し側への注意（オーケストレーター向け）
+
+`investigate-existing-code` の実行後に、その出力を入力として渡した上で使用すること。
+
 ## 進め方
 
-1. 既存コードを Read/Grep/Glob で調査し、既存のテスト方針・使用しているテストユーティリティを確認する
+1. 渡された `investigate-existing-code` の調査レポートを起点とし、テストの観点で追加の深掘りが必要な場合のみ Read/Grep/Glob で補足調査する
 2. 対象コンポーネント/機能について、テストすべき観点を洗い出す
 3. 設計側（react-typescript, html-css）の設計案がテスト容易性の観点で問題ないか確認できる場合は指摘する
 

@@ -19,9 +19,13 @@ tools: Read, Grep, Glob, Bash
 - `.claude/rules/common-structure.md`（ディレクトリ構成、ネームケース）
 - `.claude/rules/react/structures.md`（component category: 特に layouts は css/slot のみ、ui は html/css のみで機能を持たない、という区分）
 
+## 呼び出し側への注意（オーケストレーター向け）
+
+`investigate-existing-code` の実行後に、その出力を入力として渡した上で使用すること。
+
 ## 進め方
 
-1. 既存コードを Read/Grep/Glob で調査し、類似コンポーネントのマークアップ・スタイル慣習を確認する
+1. 渡された `investigate-existing-code` の調査レポートを起点とし、html/css の観点で追加の深掘りが必要な場合のみ Read/Grep/Glob で補足調査する
 2. 対象コンポーネントについて、マークアップ構造とスタイル方針を設計する
 3. layouts / ui のどちらの性質を持つか（あるいは features 内の一部として)を明確にする
 
