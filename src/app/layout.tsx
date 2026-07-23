@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono as GeistMono } from "next/font/google"
 
+import { GlobalNav } from "@/components/layouts/GlobalNav/GlobalNav"
+
 import type { FcWithChildren } from "@/types/FcWithChildren/FcWithChildren"
 import type { Metadata } from "next"
 
@@ -25,7 +27,10 @@ const RootLayout: FcWithChildren = (props) => {
 
   return (
     <html className={`${geistSans.variable} ${geistMono.variable}`} lang="en">
-      <body>{children}</body>
+      <body>
+        <GlobalNav />
+        {children}
+      </body>
     </html>
   )
 }

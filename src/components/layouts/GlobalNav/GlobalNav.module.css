@@ -1,0 +1,23 @@
+.nav {
+  border-block-end: 1px solid
+    color-mix(in srgb, var(--foreground) 15%, transparent);
+}
+
+.list {
+  display: flex;
+  max-width: 40rem;
+  gap: 1.5rem;
+  margin-inline: auto;
+  padding: 1rem 2rem;
+}
+
+.link {
+  color: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
